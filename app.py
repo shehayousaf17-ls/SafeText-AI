@@ -360,10 +360,23 @@ page = st.sidebar.radio(
 
 st.sidebar.divider()
 
-st.sidebar.info(
-    "💜 Promoting safer and kinder "
-    "digital communication through Artificial Intelligence."
-)
+
+st.sidebar.markdown("""
+<div style="
+    background-color: #F0E6FF;
+    color: #3B176B !important;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #D8BFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+">
+    💜 Promoting safer and kinder digital
+    communication through Artificial Intelligence.
+</div>
+""", unsafe_allow_html=True)
 
 
 # =====================================================
