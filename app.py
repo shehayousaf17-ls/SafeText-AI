@@ -39,99 +39,130 @@ DATASET_PATHS = [
 st.markdown("""
 <style>
 
-/* Main background */
+
+/* ===== SAFETEXT AI DESIGN ===== */
 
 .stApp {
-    background-color: #f7f3ff;
+    background-color: #F7F2FF;
+    color: #29213A;
 }
 
-/* Sidebar background */
-
-[data-testid="stSidebar"] {
-    background: linear-gradient(
-        180deg,
-        #5422a8,
-        #823bc7,
-        #b44fc0
-    );
-}
-
-/* Sidebar text */
-
-[data-testid="stSidebar"] * {
-    color: white !important;
-}
-
-/* Main title */
-
+/* Main headings */
 h1 {
-    color: #6528a8 !important;
+    color: #6425B5 !important;
+    font-size: 40px !important;
     font-weight: 800 !important;
 }
 
-/* Section headings */
-
 h2 {
-    color: #7838b5 !important;
-    font-weight: 700 !important;
+    color: #7134C5 !important;
+    font-size: 32px !important;
+    font-weight: 750 !important;
 }
 
 h3 {
-    color: #8a42bd !important;
+    color: #873CC7 !important;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+}
+
+/* Normal text */
+p, li, label, .stMarkdown {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    color: #30263D;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #E9D9FF 0%,
+        #F5EFFF 100%
+    ) !important;
+}
+
+section[data-testid="stSidebar"] h1 {
+    font-size: 29px !important;
+    color: #6425B5 !important;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+    font-size: 19px !important;
     font-weight: 600 !important;
+    color: #43206D !important;
 }
 
 /* Buttons */
-
-div.stButton > button {
+.stButton > button {
     background: linear-gradient(
         90deg,
-        #7138c7,
-        #ce4db1
-    );
-
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-weight: bold;
-    padding: 10px;
+        #7138D0,
+        #C344B5
+    ) !important;
+    color: white !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 22px !important;
+    min-height: 48px;
 }
 
-div.stButton > button:hover {
-    background: linear-gradient(
-        90deg,
-        #5522a8,
-        #a92d9d
-    );
-
-    color: white;
+.stButton > button:hover {
+    background: #5723A5 !important;
+    color: white !important;
+    border: 2px solid #E2B9FF !important;
 }
 
-/* Metric cards */
+/* Text input and text area */
+.stTextInput input,
+.stTextArea textarea {
+    font-size: 18px !important;
+    border: 2px solid #C9A5F5 !important;
+    border-radius: 10px !important;
+    color: #29213A !important;
+}
+
+/* Select boxes */
+.stSelectbox div,
+.stMultiSelect div {
+    font-size: 17px !important;
+}
+
+/* Cards and information boxes */
+div[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    font-size: 18px !important;
+}
 
 div[data-testid="stMetric"] {
-    background-color: white;
-    padding: 18px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(100, 50, 150, 0.1);
-}
-
-/* Dataframes */
-
-[data-testid="stDataFrame"] {
+    background: #EFE3FF;
+    padding: 16px;
     border-radius: 12px;
+    border: 1px solid #D5B9F5;
 }
 
-/* Text area */
-
-textarea {
-    border-radius: 10px !important;
+/* Horizontal separators */
+hr {
+    border-color: #D9C5F0 !important;
 }
 
-/* Footer */
+/* Responsive text */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px !important;
+    }
 
-.footer-text {
-    color: #785d96;
+    h2 {
+        font-size: 27px !important;
+    }
+
+    p, li {
+        font-size: 16px !important;
+    }
 }
 
 </style>
